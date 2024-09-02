@@ -21,7 +21,9 @@ export default defineConfig(() => {
           "./themes/admin/js/admin.js",
         ],
       },
-      outDir: "./public/assets/",
+      outDir: "./public/assets",
+      assetsDir: ".",
+      copyPublicDir: false,
     },
   };
 });
