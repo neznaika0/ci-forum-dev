@@ -20,7 +20,7 @@ class ImageFactory extends ImageModel
             'name'       => $faker->regexify('[0-9]{10}_[a-z0-9]{20}') . '.jpg',
             'size'       => random_int(100000, 2_000_000),
             'is_used'    => 0,
-            'ip_address' => $faker->ipv4,
+            'ip_address' => $faker->ipv4(),
         ]);
     }
 }

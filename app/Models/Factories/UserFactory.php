@@ -14,13 +14,13 @@ class UserFactory extends UserModel
     public function fake(Generator &$faker): User
     {
         return new User([
-            'username' => $this->generateUniqueUsername($faker->userName),
-            'name'     => $faker->name,
-            'email'    => $faker->email,
-            'password' => $faker->password,
+            'username' => $this->generateUniqueUsername($faker->userName()),
+            'name'     => $faker->name(),
+            'email'    => $faker->email(),
+            'password' => $faker->password(),
             'active'   => true,
-            'country'  => $faker->countryCode,
-            'timezone' => $faker->timezone,
+            'country'  => $faker->countryCode(),
+            'timezone' => $faker->timezone(),
             'trust_level' => 0,
         ]);
     }

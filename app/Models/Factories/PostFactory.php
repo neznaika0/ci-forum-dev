@@ -22,7 +22,7 @@ class PostFactory extends PostModel
             'edited_at'     => null,
             'edited_reason' => null,
             'body'          => $faker->paragraph(5, true),
-            'ip_address'    => $faker->ipv4,
+            'ip_address'    => $faker->ipv4(),
             'include_sig'   => false,
             'visible'       => true,
         ]);
